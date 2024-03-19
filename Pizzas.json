@@ -2,141 +2,161 @@
     {
         "title": "Capricciosa Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "12.99",
+        "ingredients": "Ham, mushrooms, artichokes, olives, mozzarella, tomato sauce",
+        "description": "Classic Italian Capricciosa pizza with ham, mushrooms, artichokes, and olives."
     },
     {
         "title": "Amour Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1TFFvzgjCen4CQbE-qXSoDSpRdQSt0fht",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "14.99",
+        "ingredients": "Shrimps, strawberries, basil, mozzarella, tomato sauce",
+        "description": "Amour Pizza, a delightful combination of shrimps, strawberries and fresh basil."
     },
     {
         "title": "Seafood Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1XZ2o6LvyvMVLVDCWRhc6okw8FzFaR_3e",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "16.99",
+        "ingredients": "Shrimp, squid, mussels, clams, garlic, mozzarella, white sauce",
+        "description": "Delicious Seafood Pizza loaded with shrimp, squid, mussels, and clams."
     },
     {
         "title": "Three Seas Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1p1vgXM0tgP_TTzmdkv1Rme2zvIZzLguV",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "15.99",
+        "ingredients": "Tuna, anchovies, shrimp, garlic, capers, mozzarella, tomato sauce",
+        "description": "Three Seas Pizza featuring tuna, anchovies, and shrimp for a taste of the sea."
     },
     {
         "title": "Dessert Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1tDEPaNA__1Rtgp8e_OBMT13BUbVSsZl1",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "10.99",
+        "ingredients": "Nutella, M&M's, bananas, powdered sugar, mozzarella",
+        "description": "Indulge in our Dessert Pizza topped with Nutella and bananas."
     },
     {
         "title": "Hunter Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1C2J1oD3cjnMcUja3Xxkna4m0GadOdkn9",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "13.99",
+        "ingredients": "Venison, mushrooms, caramelized onions, blue cheese, mozzarella, tomato sauce",
+        "description": "Savor the flavors of the forest with our Hunter Pizza featuring venison, mushrooms, and caramelized onions."
     },
     {
         "title": "Meat Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1EJp2EygyCi-1WGINM8LHBaVjJkvwIPbJ",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "11.99",
+        "ingredients": "Pepperoni, sausage, bacon, ham, ground beef, mozzarella, tomato sauce",
+        "description": "For meat lovers, our Meat Pizza is loaded with pepperoni, sausage, bacon, ham, and ground beef."
     },
     {
         "title": "Bolognese Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1I_SZS_he2zl-GzW9lq5BDt9JHCqBrPAF",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "14.99",
+        "ingredients": "Ground beef, mozzarella, Bolognese sauce",
+        "description": "Enjoy the hearty flavors of our classic Bolognese Pizza with ground beef and mozzarella."
     },
     {
         "title": "Caesar Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1YgPbAxgA7QH8UD3on1SWiNM8fhP-H8Wj",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "12.99",
+        "ingredients": "Grilled chicken, romaine lettuce, Parmesan cheese, Caesar dressing",
+        "description": "A twist on the classic Caesar salad, our Caesar Pizza features grilled chicken, romaine lettuce, and Parmesan cheese."
     },
     {
         "title": "Village Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1m3p_PjsycEjwlkZtjbVHTsH7bT_yEeLq",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "13.99",
+        "ingredients": "Italian sausage, roasted red peppers, caramelized onions, feta cheese, mozzarella, tomato sauce",
+        "description": "Experience the flavors of a rustic village with our Village Pizza, featuring Italian sausage, roasted red peppers, and caramelized onions."
     },
     {
         "title": "Hawaiian Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=19Maobe40NDF1BfyhGww6SAIWH-7pS7LX",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "11.99",
+        "ingredients": "Ham, pineapple, bacon, mozzarella, tomato sauce",
+        "description": "Taste the tropics with our Hawaiian Pizza, topped with ham, pineapple, and bacon."
     },
     {
         "title": "Pepperoni Mushroom Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1HKyP3Hb7MVGNVic1Xlfo8ojqqq29Y_MY",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "10.99",
+        "ingredients": "Pepperoni, mushrooms, mozzarella, tomato sauce",
+        "description": "Classic Pepperoni Mushroom Pizza loaded with pepperoni and mushrooms."
     },
     {
         "title": "Chicken Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1Q7KpiomE0q8uawNgrjT7_oxkOV8cpkw3",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "12.99",
+        "ingredients": "Grilled chicken, barbecue sauce, red onions, cilantro, mozzarella",
+        "description": "Satisfy your cravings with our Chicken Pizza, featuring grilled chicken, barbecue sauce, and red onions."
     },
     {
         "title": "Pepperoni Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1RC80KrkFDiabu_hn588irrKSup49hPL6",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "9.99",
+        "ingredients": "Pepperoni, mozzarella, tomato sauce",
+        "description": "Classic Pepperoni Pizza loaded with spicy pepperoni slices."
     },
     {
         "title": "Favorite Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1qVdwwVFMpk4uRs6fH5ugVrzDXAGbWUap",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "13.99",
+        "ingredients": "Bacon, sausage, mushrooms, bell peppers, onions, olives, mozzarella, tomato sauce",
+        "description": "Our Favorite Pizza is a crowd-pleaser with bacon, sausage, mushrooms, and bell peppers."
     },
     {
         "title": "Veggie Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1BPmmxkC-I_DOfMaEh07TN5lLCsZsSaSG",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "12.99",
+        "ingredients": "Spinach, tomatoes, onions, bell peppers, mushrooms, black olives, mozzarella, tomato sauce",
+        "description": "For vegetarians, our Veggie Pizza is loaded with spinach, tomatoes, onions, and bell peppers."
     },
     {
         "title": "Marinara Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1mg0kWSrUqtEali-CLnb5VxF2btYXvV5Y",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "9.99",
+        "ingredients": "Garlic, oregano, basil, olive oil, Tofu cheese, tomato sauce",
+        "description": "Simple yet delicious, our Marinara Pizza is topped with garlic, oregano, and basil."
     },
     {
         "title": "Ham Mushroom Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1qR8OQ3Z9JKTJl4aUeyweIHSk8_pSovjR",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "11.99",
+        "ingredients": "Ham, mushrooms, mozzarella, tomato sauce",
+        "description": "Classic combination of ham and mushrooms on our Ham Mushroom Pizza."
     },
     {
         "title": "Four Cheese Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1xYnAyhRDByvIk30yJvr4rLbGP7huKQKt",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "12.99",
+        "ingredients": "Mozzarella, Parmesan, cheddar, feta, tomato sauce",
+        "description": "Indulge in our Four Cheese Pizza loaded with Mozzarella, Parmesan, cheddar, and feta."
     },
     {
         "title": "Margherita Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1aNAKia1Di6quZojyyVCubVrxM9_Fv_Hn",
-        "price": "",
-        "ingredients": "",
-        "description": ""
+        "imageHQUrl": "https://drive.google.com/uc?export=download&id=14frMHkmbRnpO_ePo2IRG085vCaTUkEU4",
+        "price": "10.99",
+        "ingredients": "Tomatoes, fresh mozzarella, basil, olive oil, tomato sauce",
+        "description": "Traditional Margherita Pizza topped with fresh tomatoes, mozzarella, and basil."
     }
 ]
