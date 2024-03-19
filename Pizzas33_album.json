@@ -1,82 +1,83 @@
 [
     {
-        "title": "9 Пицца Гавайская.png",
+        "title": "Hawaiian Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1MrfB5kEZb5g2BFJtGgz_BDGPUGxlY6uN"
+    },
+    {
+        "title": "Chicken Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1AltvFEJJlqNpugZtoSsbO5djCNaUh-BT"
+    },
+    {
+        "title": "Pepperoni Mushrooms Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1zMf_laH_hg3lpkX8u29ILQRzWnk1Aj5f"
+    },
+    {
+        "title": "Pepperoni Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1AjNb5so2i9xZbzrUZI5R0IIz_hTEuZ09"
+    },
+    {
+        "title": "Ham Mushrooms Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1q62E1Kf0FzN2vsiNjNu2T6IUR0rz_GMZ"
+    },
+    {
+        "title": "Veggie Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1Hs5GAlCxeUTTmqSRWgTCsE3kys9j5jK0"
+    },
+    {
+        "title": "Four Cheese Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1vzuseD-LKA8-76fNwJTtK8Q1B7NnRHq5"
+    },
+    {
+        "title": "Capri Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1BRoec7ZKddf0hCSkylDHVj3iuPxK5KxR"
+    },
+    {
+        "title": "Marinara Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=11gQ8iBgARgvbRM8lU3lw-Pii5WCtjNWg"
+    },
+    {
+        "title": "Dessert Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1BBj90HOPGe_-Tfwu4yTzlQ8-qBZOCcse"
+    },
+    {
+        "title": "Three Seas Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1DHFmIamPoGixn1otDAkG2FDXsgiwVXUJ"
+    },
+    {
+        "title": "Amour Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1PjbiJswnDAMjtVJ-kVVxXgXKzsK48p7r"
+    },
+    {
+        "title": "Seafood Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1Fp9RAytNHXM9gorahYAsQXAxYXXh4jg6"
+    },
+    {
+        "title": "Hunter Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1EG9Eu667CpET1hHonMADY2gFue9c41t8"
+    },
+    {
+        "title": "Bolognese Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1QX0s5pWTa7JLL397E9I3MSPRvYiULKpO"
+    },
+    {
+        "title": "Village Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1tICiLb4UfNz8iaYi3o7xTBl4ZBuUV1sj"
+    },
+    {
+        "title": "Meat Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1hBPm0B-8cdPpKFzOvzEmiSgiHpL6HRa6"
+    },
+    {
+        "title": "Caesar Pizza",
         "imageUrl": "https://drive.google.com/uc?export=download&id=1_QTM6hhXX-Hpn-qgG7BAZMcwyDWE1dVx"
     },
     {
-        "title": "8 Пицца Чикен.png",
-        "imageUrl": "https://drive.google.com/file/d/1AltvFEJJlqNpugZtoSsbO5djCNaUh-BT/view?usp=drivesdk"
+        "title": "Favorite Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1_mkEsoytXWSFBQah7-4Q4TBqBdUqBxkt"
     },
     {
-        "title": "7 Пицца Пепперони грибы.png",
-        "imageUrl": "https://drive.google.com/file/d/1zMf_laH_hg3lpkX8u29ILQRzWnk1Aj5f/view?usp=drivesdk"
-    },
-    {
-        "title": "6 Пицца Пеперони.png",
-        "imageUrl": "https://drive.google.com/file/d/1AjNb5so2i9xZbzrUZI5R0IIz_hTEuZ09/view?usp=drivesdk"
-    },
-    {
-        "title": "5 Пицца Ветчина грибы.png",
-        "imageUrl": "https://drive.google.com/file/d/1q62E1Kf0FzN2vsiNjNu2T6IUR0rz_GMZ/view?usp=drivesdk"
-    },
-    {
-        "title": "4 Пицца Веджи.jpg",
-        "imageUrl": "https://drive.google.com/file/d/1Hs5GAlCxeUTTmqSRWgTCsE3kys9j5jK0/view?usp=drivesdk"
-    },
-    {
-        "title": "3 Пицца Четыре сыра.png",
-        "imageUrl": "https://drive.google.com/file/d/1vzuseD-LKA8-76fNwJTtK8Q1B7NnRHq5/view?usp=drivesdk"
-    },
-    {
-        "title": "20 Пицца Капри.jpg",
-        "imageUrl": "https://drive.google.com/file/d/1BRoec7ZKddf0hCSkylDHVj3iuPxK5KxR/view?usp=drivesdk"
-    },
-    {
-        "title": "2 Пицца Маринара.png",
-        "imageUrl": "https://drive.google.com/file/d/11gQ8iBgARgvbRM8lU3lw-Pii5WCtjNWg/view?usp=drivesdk"
-    },
-    {
-        "title": "19 Пицца На десерт.jpg",
-        "imageUrl": "https://drive.google.com/file/d/1BBj90HOPGe_-Tfwu4yTzlQ8-qBZOCcse/view?usp=drivesdk"
-    },
-    {
-        "title": "18 Пицца Три моря.png",
-        "imageUrl": "https://drive.google.com/file/d/1DHFmIamPoGixn1otDAkG2FDXsgiwVXUJ/view?usp=drivesdk"
-    },
-    {
-        "title": "17 Пицца Амур.png",
-        "imageUrl": "https://drive.google.com/file/d/1PjbiJswnDAMjtVJ-kVVxXgXKzsK48p7r/view?usp=drivesdk"
-    },
-    {
-        "title": "16 Пицца Морская.png",
-        "imageUrl": "https://drive.google.com/file/d/1Fp9RAytNHXM9gorahYAsQXAxYXXh4jg6/view?usp=drivesdk"
-    },
-    {
-        "title": "15 Пицца Охотничья.jpg",
-        "imageUrl": "https://drive.google.com/file/d/1EG9Eu667CpET1hHonMADY2gFue9c41t8/view?usp=drivesdk"
-    },
-    {
-        "title": "14 Пицца Болоньезе.jpg",
-        "imageUrl": "https://drive.google.com/file/d/1QX0s5pWTa7JLL397E9I3MSPRvYiULKpO/view?usp=drivesdk"
-    },
-    {
-        "title": "13 Пицца Деревенская.jpg",
-        "imageUrl": "https://drive.google.com/file/d/1tICiLb4UfNz8iaYi3o7xTBl4ZBuUV1sj/view?usp=drivesdk"
-    },
-    {
-        "title": "12 Пицца Мясная.png",
-        "imageUrl": "https://drive.google.com/file/d/1hBPm0B-8cdPpKFzOvzEmiSgiHpL6HRa6/view?usp=drivesdk"
-    },
-    {
-        "title": "11 Пицца Цезарь.jpg",
-        "imageUrl": "https://drive.google.com/file/d/1_QTM6hhXX-Hpn-qgG7BAZMcwyDWE1dVx/view?usp=drivesdk"
-    },
-    {
-        "title": "10 Пицца Любимая.png",
-        "imageUrl": "https://drive.google.com/file/d/1_mkEsoytXWSFBQah7-4Q4TBqBdUqBxkt/view?usp=drivesdk"
-    },
-    {
-        "title": "1 Пицца Маргарита.png",
-        "imageUrl": "https://drive.google.com/file/d/1PaEJPEXNJ7pbDWHA_TdDjDmtM57W06l5/view?usp=drivesdk"
+        "title": "Margherita Pizza",
+        "imageUrl": "https://drive.google.com/uc?export=download&id=1PaEJPEXNJ7pbDWHA_TdDjDmtM57W06l5"
     }
 ]
+
