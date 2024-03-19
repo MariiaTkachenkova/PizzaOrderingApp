@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    let persistence = PersistenceController.shared
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        TabView {
+            MenuView()
+                .tabItem {
+                    Text("Menu")
+                    Image(systemName: "list.bullet")
+                }
+                .navigationBarHidden(true)
+                .environment(\.managedObjectContext, persistence.container.viewContext)
+            
+            UserProfileView()
+                .tabItem {
+                    Text("Profile")
+                    Image(systemName: "square.and.pencil")
+
+                }
+        }
     }
 }
 

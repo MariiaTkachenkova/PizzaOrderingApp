@@ -9,7 +9,10 @@ import SwiftUI
 
 struct MenuView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text("Santa Maria")
+                .font(.custom("Markazi", size: 34))
+        }
     }
 }
 
