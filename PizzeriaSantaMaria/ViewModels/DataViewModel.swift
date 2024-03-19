@@ -8,24 +8,55 @@
 import SwiftUI
 import Alamofire
 
-class PizzaViewModel: ObservableObject {
+class DataViewModel: ObservableObject {
     
-    @Published var pizzas: [Pizzas] = []
+    @Published var pizzas: [PizzaItem] = []
+    
+//    func fetchData() {
+//        AF.request("https://raw.githubusercontent.com/MariiaTkachenkova/PizzaOrderingApp/main/Pizzas.json").responseJSON { response in
+//            switch response.result {
+//            case .success(let data):
+//                print(data)
+//                if let jsonData = try? JSONSerialization.data(withJSONObject: data),
+//                   let decodedPizzas = try? JSONDecoder().decode([PizzaItem].self, from: jsonData) {
+//                    self.pizzas = decodedPizzas
+//                }
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+//    }
     
     func fetchData() {
-        AF.request("https://raw.githubusercontent.com/MariiaTkachenkova/PizzaOrderingApp/main/Pizzas.json").responseJSON { response in
+        AF.request("https://raw.githubusercontent.com/MariiaTkachenkova/PizzaOrderingApp/main/Pizzas.json").responseData { response in
             switch response.result {
             case .success(let data):
                 print(data)
-                if let jsonData = try? JSONSerialization.data(withJSONObject: data),
-                   let decodedPizzas = try? JSONDecoder().decode([Pizzas].self, from: jsonData) {
+                do {
+                    let decodedPizzas = try JSONDecoder().decode([PizzaItem].self, from: data)
                     self.pizzas = decodedPizzas
+                    PersistenceController.shared.clear()
+                    let viewContext = PersistenceController.shared.container.viewContext
+                    for pizzaItem in decodedPizzas {
+                        let pizza = Pizza(context: viewContext)
+                        pizza.title = pizzaItem.title
+                        pizza.image = pizzaItem.imageUrl.absoluteString
+                        pizza.imageHQ = pizzaItem.imageHQUrl.absoluteString
+                        pizza.price = pizzaItem.price
+                        pizza.desc = pizzaItem.description
+                        pizza.ingred = pizzaItem.ingredients
+                    }
+                    try viewContext.save()
+                } catch {
+                    print("Error decoding JSON or saving to CoreData: \(error)")
                 }
             case .failure(let error):
-                print(error)
+                print("Error fetching data: \(error)")
             }
         }
     }
+
+    
 }
 
 

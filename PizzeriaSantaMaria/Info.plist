@@ -6,8 +6,8 @@
 	<string></string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Karla.ttf</string>
 		<string>Markazi.ttf</string>
+		<string>Karla.ttf</string>
 	</array>
 </dict>
 </plist>
