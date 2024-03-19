@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65183FF22BA8C21F00FA8B05 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 65183FF12BA8C21F00FA8B05 /* Alamofire */; };
+		65183FF42BA8C21F00FA8B05 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 65183FF32BA8C21F00FA8B05 /* AlamofireDynamic */; };
+		65183FF62BA8C54A00FA8B05 /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65183FF52BA8C54A00FA8B05 /* DataViewModel.swift */; };
+		65183FF82BA8D16000FA8B05 /* PizzaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65183FF72BA8D16000FA8B05 /* PizzaItem.swift */; };
+		65F3E4BD2B6A874B00542448 /* PizzeriaSantaMariaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F3E4BC2B6A874B00542448 /* PizzeriaSantaMariaApp.swift */; };
+		65F3E4BF2B6A874B00542448 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F3E4BE2B6A874B00542448 /* Persistence.swift */; };
+		65F3E4C22B6A874B00542448 /* PizzeriaSantaMaria.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65F3E4C02B6A874B00542448 /* PizzeriaSantaMaria.xcdatamodeld */; };
+		65F3E4C42B6A874B00542448 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F3E4C32B6A874B00542448 /* ContentView.swift */; };
+		65F3E4C62B6A874D00542448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F3E4C52B6A874D00542448 /* Assets.xcassets */; };
+		65F3E4CA2B6A874D00542448 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F3E4C92B6A874D00542448 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		65183FF52BA8C54A00FA8B05 /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
+		65183FF72BA8D16000FA8B05 /* PizzaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaItem.swift; sourceTree = "<group>"; };
+		65F3E4B92B6A874B00542448 /* PizzeriaSantaMaria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzeriaSantaMaria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F3E4BC2B6A874B00542448 /* PizzeriaSantaMariaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzeriaSantaMariaApp.swift; sourceTree = "<group>"; };
+		65F3E4BE2B6A874B00542448 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		65F3E4C12B6A874B00542448 /* PizzeriaSantaMaria.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PizzeriaSantaMaria.xcdatamodel; sourceTree = "<group>"; };
+		65F3E4C32B6A874B00542448 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		65F3E4C52B6A874D00542448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65F3E4C72B6A874D00542448 /* PizzeriaSantaMaria.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PizzeriaSantaMaria.entitlements; sourceTree = "<group>"; };
+		65F3E4C92B6A874D00542448 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65F3E4B62B6A874B00542448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65183FF22BA8C21F00FA8B05 /* Alamofire in Frameworks */,
+				65183FF42BA8C21F00FA8B05 /* AlamofireDynamic in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65183FED2BA8C0F900FA8B05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		65183FEE2BA8C0FF00FA8B05 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				65183FF52BA8C54A00FA8B05 /* DataViewModel.swift */,
+				65183FF72BA8D16000FA8B05 /* PizzaItem.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		65183FEF2BA8C10D00FA8B05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6588D6EF2BA9AFF000D7EDD3 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				65F3E4C52B6A874D00542448 /* Assets.xcassets */,
+				6588D6F02BA9B00700D7EDD3 /* Fonts */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		6588D6F02BA9B00700D7EDD3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		6588D6F12BA9B02C00D7EDD3 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				65F3E4C02B6A874B00542448 /* PizzeriaSantaMaria.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		65F3E4B02B6A874B00542448 = {
+			isa = PBXGroup;
+			children = (
+				65F3E4BB2B6A874B00542448 /* PizzeriaSantaMaria */,
+				65F3E4BA2B6A874B00542448 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65F3E4BA2B6A874B00542448 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65F3E4B92B6A874B00542448 /* PizzeriaSantaMaria.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65F3E4BB2B6A874B00542448 /* PizzeriaSantaMaria */ = {
+			isa = PBXGroup;
+			children = (
+				65F3E4BC2B6A874B00542448 /* PizzeriaSantaMariaApp.swift */,
+				65183FEF2BA8C10D00FA8B05 /* Views */,
+				65183FEE2BA8C0FF00FA8B05 /* ViewModels */,
+				65183FED2BA8C0F900FA8B05 /* Models */,
+				65F3E4BE2B6A874B00542448 /* Persistence.swift */,
+				65F3E4C32B6A874B00542448 /* ContentView.swift */,
+				6588D6EF2BA9AFF000D7EDD3 /* Media */,
+				6588D6F12BA9B02C00D7EDD3 /* CoreData */,
+				65F3E4C72B6A874D00542448 /* PizzeriaSantaMaria.entitlements */,
+				65F3E4C82B6A874D00542448 /* Preview Content */,
+			);
+			path = PizzeriaSantaMaria;
+			sourceTree = "<group>";
+		};
+		65F3E4C82B6A874D00542448 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				65F3E4C92B6A874D00542448 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65F3E4B82B6A874B00542448 /* PizzeriaSantaMaria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F3E4CD2B6A874D00542448 /* Build configuration list for PBXNativeTarget "PizzeriaSantaMaria" */;
+			buildPhases = (
+				65F3E4B52B6A874B00542448 /* Sources */,
+				65F3E4B62B6A874B00542448 /* Frameworks */,
+				65F3E4B72B6A874B00542448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PizzeriaSantaMaria;
+			packageProductDependencies = (
+				65183FF12BA8C21F00FA8B05 /* Alamofire */,
+				65183FF32BA8C21F00FA8B05 /* AlamofireDynamic */,
+			);
+			productName = PizzeriaSantaMaria;
+			productReference = 65F3E4B92B6A874B00542448 /* PizzeriaSantaMaria.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65F3E4B12B6A874B00542448 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					65F3E4B82B6A874B00542448 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 65F3E4B42B6A874B00542448 /* Build configuration list for PBXProject "PizzeriaSantaMaria" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65F3E4B02B6A874B00542448;
+			packageReferences = (
+				65183FF02BA8C21F00FA8B05 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 65F3E4BA2B6A874B00542448 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65F3E4B82B6A874B00542448 /* PizzeriaSantaMaria */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65F3E4B72B6A874B00542448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F3E4CA2B6A874D00542448 /* Preview Assets.xcassets in Resources */,
+				65F3E4C62B6A874D00542448 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65F3E4B52B6A874B00542448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F3E4C22B6A874B00542448 /* PizzeriaSantaMaria.xcdatamodeld in Sources */,
+				65F3E4BD2B6A874B00542448 /* PizzeriaSantaMariaApp.swift in Sources */,
+				65F3E4C42B6A874B00542448 /* ContentView.swift in Sources */,
+				65183FF82BA8D16000FA8B05 /* PizzaItem.swift in Sources */,
+				65F3E4BF2B6A874B00542448 /* Persistence.swift in Sources */,
+				65183FF62BA8C54A00FA8B05 /* DataViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		65F3E4CB2B6A874D00542448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65F3E4CC2B6A874D00542448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		65F3E4CE2B6A874D00542448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PizzeriaSantaMaria/PizzeriaSantaMaria.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"PizzeriaSantaMaria/Preview Content\"";
+				DEVELOPMENT_TEAM = 4P3J54S6VX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MariiaTkachenkova.PizzeriaSantaMaria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65F3E4CF2B6A874D00542448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PizzeriaSantaMaria/PizzeriaSantaMaria.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"PizzeriaSantaMaria/Preview Content\"";
+				DEVELOPMENT_TEAM = 4P3J54S6VX;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MariiaTkachenkova.PizzeriaSantaMaria;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65F3E4B42B6A874B00542448 /* Build configuration list for PBXProject "PizzeriaSantaMaria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F3E4CB2B6A874D00542448 /* Debug */,
+				65F3E4CC2B6A874D00542448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65F3E4CD2B6A874D00542448 /* Build configuration list for PBXNativeTarget "PizzeriaSantaMaria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F3E4CE2B6A874D00542448 /* Debug */,
+				65F3E4CF2B6A874D00542448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65183FF02BA8C21F00FA8B05 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		65183FF12BA8C21F00FA8B05 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65183FF02BA8C21F00FA8B05 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		65183FF32BA8C21F00FA8B05 /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65183FF02BA8C21F00FA8B05 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		65F3E4C02B6A874B00542448 /* PizzeriaSantaMaria.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				65F3E4C12B6A874B00542448 /* PizzeriaSantaMaria.xcdatamodel */,
+			);
+			currentVersion = 65F3E4C12B6A874B00542448 /* PizzeriaSantaMaria.xcdatamodel */;
+			path = PizzeriaSantaMaria.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 65F3E4B12B6A874B00542448 /* Project object */;
+}
