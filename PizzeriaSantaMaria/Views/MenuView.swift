@@ -6,15 +6,18 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct MenuView: View {
     
-    @ObservedObject var viewModel = DataViewModel()
-    
-    @State private var searchText = ""
-    @State private var menuItems: [PizzaItem] = []
-    @State private var selectedCategory: String? = nil
     @Environment(\.managedObjectContext) private var viewContext
+    
+    @ObservedObject var viewModel = DataViewModel()
+
+    @State private var searchText = ""
+    @State private var selectedCategory: String? = nil
+
+    private var subtitleText = "We are a family owned Italian pizzeria, focused on traditional recipes served with a modern twist."
     
     @FetchRequest(entity: Pizza.entity(), sortDescriptors: []) var pizzas: FetchedResults<Pizza>
     
@@ -22,66 +25,36 @@ struct MenuView: View {
         
         NavigationView {
             VStack {
-                HStack {
-                    Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 250, height: 40)
-                        .background(
-                            Image("Logo")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 185, height: 40)
-                                .clipped()
-                        )
-                    
-                    Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 6, height: 54)
-                        .background(
-                            Image("profile-image-placeholder")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 56, height: 54)
-                                .clipped()
-                        )
-                }
-                
                 ZStack {
                     Rectangle()
                         .foregroundColor(Color(red: 0.29, green: 0.37, blue: 0.34))
                         .frame(width: 428, height: 309)
                     
-                    Image("Hero image")
+                    Image("pizza_cut")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 139, height: 144)
-                        .clipped()
                         .cornerRadius(16)
                         .frame(width: 200, height: 100)
                         .frame(width: 1, alignment: .leading)
                     
-                    VStack(spacing: 20) {
-                        Text("Little Lemon")
-                            .font(
-                                Font.custom("Markazi Text", size: 64)
-                                    .weight(.medium)
-                            )
+                    VStack(spacing: 10) {
+                        Text("Santa Maria")
+                            .font(Font.custom("Markazi Text", size: 64).weight(.medium))
                             .foregroundColor(Color(red: 0.96, green: 0.81, blue: 0.08))
                             .frame(width: 350, alignment: .leading)
-                            .padding(.top)
                         
-                        Text("Chicago")
-                            .font(Font.custom("Markazi Text", size: 60))
+                        Text("Roma")
+                            .font(Font.custom("Markazi Text", size: 55))
                             .foregroundColor(.white)
                             .frame(height: 30)
                             .frame(width: 350, alignment: .leading)
                         
-                        Text("We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.")
+                        Text(subtitleText)
                             .font(Font.custom("Inter", size: 16))
                             .foregroundColor(.white)
                             .frame(width: 200, height: 100)
                             .frame(width: 350, alignment: .leading)
-                        
                         
                         Rectangle()
                             .foregroundColor(.clear)
@@ -108,35 +81,59 @@ struct MenuView: View {
                     )
                     .foregroundColor(.black)
                     .frame(width: 350, alignment: .leading)
-                 
                 
-                List {
-                    ForEach(pizzas, id: \.self) { pizza in
-                        NavigationLink(destination: ItemDetailView(pizza: pizza)) {
-                            MenuItemView(pizza: pizza)
+                FetchedObjects(predicate: buildPredicate(),
+                               sortDescriptors: buildSortDescriptors()) {
+                    (pizzas: [Pizza]) in
+                    List {
+                        ForEach(pizzas, id: \.self) { pizza in
+                            NavigationLink(destination: ItemDetailView(pizza: pizza)) {
+                                MenuItemView(pizza: pizza)
+                            }
                         }
                     }
-                }
-                .onAppear {
-                    viewModel.fetchData()
-                }
+                    .listStyle(.plain)
+                    .onAppear {
+                        if pizzas.isEmpty {
+                            viewModel.fetchData(viewContext: viewContext)
+                        }
+                    }}
                 
             }
+            .toolbar {
+                ToolbarItemGroup(placement: .topBarTrailing) {
+                    Text("SANTA MARIA")
+                        .font(Font.custom("Markazi Text", size: 37)
+                            .weight(.medium))
+                        .foregroundColor(Color(red: 0.29, green: 0.37, blue: 0.34))
+                        .frame(width: 350, alignment: .center)
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "cart.fill")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .foregroundStyle(.gray)
+                            .frame(width: 30, height: 30)
+                            .offset(x: -20)
+                    }
+                }
+            }
         }
+        
     }
     
     func buildSortDescriptors() -> [NSSortDescriptor] {
         return [NSSortDescriptor(key: "title", ascending: true, selector: #selector(NSString.localizedStandardCompare))]
-        
     }
     
-    func buildPredicate(_ pizza: Pizza) -> Bool {
-        if searchText.isEmpty {
-            return true
-        } else {
-            return (pizza.title ?? "").localizedStandardContains(searchText)
+    func buildPredicate() -> NSPredicate {
+        if searchText != "" {
+            return NSPredicate(format: "title CONTAINS[cd] %@", searchText)
         }
-        
+        else {
+            return NSPredicate(format: "TRUEPREDICATE")
+        }
     }
 }
 

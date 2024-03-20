@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Alamofire
+import CoreData
 
 class DataViewModel: ObservableObject {
     
@@ -27,7 +28,9 @@ class DataViewModel: ObservableObject {
 //        }
 //    }
     
-    func fetchData() {
+    func fetchData(viewContext: NSManagedObjectContext) {
+        PersistenceController.shared.clear()
+        
         AF.request("https://raw.githubusercontent.com/MariiaTkachenkova/PizzaOrderingApp/main/Pizzas.json").responseData { response in
             switch response.result {
             case .success(let data):
@@ -36,12 +39,12 @@ class DataViewModel: ObservableObject {
                     let decodedPizzas = try JSONDecoder().decode([PizzaItem].self, from: data)
                     self.pizzas = decodedPizzas
                     PersistenceController.shared.clear()
-                    let viewContext = PersistenceController.shared.container.viewContext
+                    //let viewContext = PersistenceController.shared.container.viewContext
                     for pizzaItem in decodedPizzas {
                         let pizza = Pizza(context: viewContext)
                         pizza.title = pizzaItem.title
-                        pizza.image = pizzaItem.imageUrl.absoluteString
-                        pizza.imageHQ = pizzaItem.imageHQUrl.absoluteString
+                        pizza.image = pizzaItem.imageUrlS.absoluteString
+                        pizza.imageHQ = pizzaItem.imageUrl.absoluteString
                         pizza.price = pizzaItem.price
                         pizza.desc = pizzaItem.description
                         pizza.ingred = pizzaItem.ingredients
@@ -58,56 +61,3 @@ class DataViewModel: ObservableObject {
 
     
 }
-
-
-//class ViewModel: ObservableObject {
-//    @Published var data: [PizzaItem] = []
-//
-//    func fetchData() {
-//        guard let url = URL(string: "https://raw.githubusercontent.com/MariiaTkachenkova/PizzaOrderingApp/main/Pizzas33_album.json") else {
-//            print("Invalid URL")
-//            return
-//        }
-//
-//        AF.request(url).responseDecodable(of: [PizzaItem].self) { response in
-//            switch response.result {
-//            case .success(let decodedData):
-//                print("Raw JSON data: \(decodedData)")
-//                self.data = decodedData
-//            case .failure(let error):
-//                print("Error fetching data: \(error.localizedDescription)")
-//            }
-//        }
-//    }
-//}
-
-//class ViewModel: ObservableObject {
-//    @Published var data: [PizzaItem] = []
-//
-//    func fetchData() {
-//        guard let url = URL(string: "https://raw.githubusercontent.com/MariiaTkachenkova/PizzaOrderingApp/main/Pizzas33_album.json") else {
-//            print("Invalid URL")
-//            return
-//        }
-//
-//        AF.request(url).responseJSON { response in
-//            switch response.result {
-//            case .success(let value):
-//                print("Raw JSON data: \(value)")
-//                do {
-//                    let jsonData = try JSONSerialization.data(withJSONObject: value)
-//                    let decodedData = try JSONDecoder().decode([PizzaItem].self, from: jsonData)
-//                    DispatchQueue.main.async {
-//                        self.data = decodedData
-//                    }
-//                } catch {
-//                    print("Error decoding JSON: \(error.localizedDescription)")
-//                }
-//            case .failure(let error):
-//                print("Error fetching data: \(error.localizedDescription)")
-//            }
-//        }
-//    }
-//}
-
-

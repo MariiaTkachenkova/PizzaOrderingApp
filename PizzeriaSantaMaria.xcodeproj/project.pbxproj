@@ -15,6 +15,7 @@
 		65459E632BA9CDC200FEFA5A /* Markazi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65459E612BA9CDC200FEFA5A /* Markazi.ttf */; };
 		65459E662BA9DA2D00FEFA5A /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65459E652BA9DA2D00FEFA5A /* TestView.swift */; };
 		65459E682BA9E8BA00FEFA5A /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65459E672BA9E8BA00FEFA5A /* MenuItemView.swift */; };
+		65459E6A2BAA34FA00FEFA5A /* FetchedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65459E692BAA34FA00FEFA5A /* FetchedObjects.swift */; };
 		6588D6F32BA9B62F00D7EDD3 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6588D6F22BA9B62F00D7EDD3 /* OnboardingView.swift */; };
 		6588D6F52BA9B66300D7EDD3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6588D6F42BA9B66300D7EDD3 /* HomeView.swift */; };
 		6588D6F72BA9B67700D7EDD3 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6588D6F62BA9B67700D7EDD3 /* MenuView.swift */; };
@@ -36,6 +37,7 @@
 		65459E612BA9CDC200FEFA5A /* Markazi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Markazi.ttf; sourceTree = "<group>"; };
 		65459E652BA9DA2D00FEFA5A /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		65459E672BA9E8BA00FEFA5A /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		65459E692BAA34FA00FEFA5A /* FetchedObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedObjects.swift; sourceTree = "<group>"; };
 		6588D6F22BA9B62F00D7EDD3 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		6588D6F42BA9B66300D7EDD3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		6588D6F62BA9B67700D7EDD3 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		6588D6F12BA9B02C00D7EDD3 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				65459E692BAA34FA00FEFA5A /* FetchedObjects.swift */,
 				65F3E4BE2B6A874B00542448 /* Persistence.swift */,
 				65F3E4C02B6A874B00542448 /* PizzeriaSantaMaria.xcdatamodeld */,
 			);
@@ -252,6 +255,7 @@
 				6588D6F72BA9B67700D7EDD3 /* MenuView.swift in Sources */,
 				6588D6F92BA9BB6500D7EDD3 /* UserProfileView.swift in Sources */,
 				6588D6FD2BA9BC1900D7EDD3 /* CartView.swift in Sources */,
+				65459E6A2BAA34FA00FEFA5A /* FetchedObjects.swift in Sources */,
 				6588D6FB2BA9BB7C00D7EDD3 /* ItemDetailView.swift in Sources */,
 				65183FF82BA8D16000FA8B05 /* PizzaItem.swift in Sources */,
 				6588D6F52BA9B66300D7EDD3 /* HomeView.swift in Sources */,

@@ -21,13 +21,11 @@ struct MenuItemView: View {
             HStack {
                 VStack(alignment: .leading){
                     Text("\(pizza.title ?? "")")
-                        .padding(EdgeInsets(top: 2, leading: 0, bottom: 2, trailing: 0))
-                    Text("\(pizza.desc ?? "")")
-                        .lineLimit(2)
-                        .fontWeight(.light)
+                        .font(.system(size: 20)) 
+                        .padding([.top, .bottom], 2)
                     Text("$ \(pizza.price ?? "")")
                         .fontWeight(.heavy)
-                        .padding(EdgeInsets(top: 2, leading: 0, bottom: 2, trailing: 0))
+                        .padding(.top, 2)
                 }
                 Spacer()
                 AsyncImage(
@@ -35,10 +33,16 @@ struct MenuItemView: View {
                     content: { image in
                         image.resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(maxWidth: 100, maxHeight: 100)
+                            .frame(maxWidth: 110, maxHeight: 110)
                     },
                     placeholder: {
-                        Rectangle().frame(width:  100, height: 70).foregroundColor(.black)
+                        ZStack {
+                            Image("pizza_desk")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(maxWidth: 110, maxHeight: 110)
+                            ProgressView()
+                        }
                     }
                 )
             }
