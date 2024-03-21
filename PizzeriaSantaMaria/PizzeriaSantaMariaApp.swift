@@ -13,7 +13,7 @@ struct PizzeriaSantaMariaApp: App {
 
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            OnboardingView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

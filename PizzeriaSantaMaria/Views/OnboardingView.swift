@@ -7,18 +7,11 @@
 
 import SwiftUI
 
-let kFirstName = "fisrt name key"
-let kLastName = "last name key"
-let kEmail = "email key"
-let kIsLoggedIn = "kIsLoggedIn"
-
 struct OnboardingView: View {
-    @State private var firstName = ""
-    @State private var lastName = ""
     @State private var email = ""
-    @State private var name = ""
     @State private var password = ""
     @State private var isLoggedIn = false
+    @State private var isSheetOpen = false
     
     var body: some View {
         NavigationView {
@@ -45,12 +38,11 @@ struct OnboardingView: View {
                             .offset(y: -50)
                         
                         Text("Login to your Account")
-                            .font(Font.custom("Karla", size: 15)
-                                .weight(.medium))
+                            .font(.highlightText())
                             .foregroundColor(.black)
                             .frame(width: 350, alignment: .leading)
                         
-                        TextField("Name", text: $name)
+                        TextField("E-mail", text: $email)
                             .padding()
                             .frame(maxWidth: .infinity)
                             .background(Color.white)
@@ -67,13 +59,12 @@ struct OnboardingView: View {
                             .padding()
                         
                         Button(action: {
-                            if !name.isEmpty && !password.isEmpty {
+                            if !email.isEmpty && !password.isEmpty {
                                 UserDefaults.standard.set(true, forKey: kIsLoggedIn)
                                 if UserDefaults.standard.bool(forKey: kIsLoggedIn) {
                                     isLoggedIn = true
                                 }
                             }
-                            
                         }) {
                             Text("Sign in")
                                 .font(Font.custom("Karla", size: 15))
@@ -127,12 +118,7 @@ struct OnboardingView: View {
                                 .frame(width: 135, alignment: .center)
                             
                             Button("Sign Up") {
-                                if !firstName.isEmpty && !lastName.isEmpty && !email.isEmpty {
-                                    UserDefaults.standard.set(firstName, forKey: kFirstName)
-                                    UserDefaults.standard.set(lastName, forKey: kLastName)
-                                    UserDefaults.standard.set(email, forKey: kEmail)
-                                    isLoggedIn = true
-                                }
+                                isSheetOpen = true
                             }
                             .font(Font.custom("Karla", size: 13).weight(.medium))
                             .multilineTextAlignment(.center)
@@ -143,11 +129,24 @@ struct OnboardingView: View {
                     }
                     .padding()
                 }//vstack
-            }//zstack
+                .onAppear() {
+                    if UserDefaults.standard.bool(forKey: kIsLoggedIn) {
+                        isLoggedIn = true
+                    }
+            }
+            }
+            .ignoresSafeArea(.keyboard)
         }
-        .toolbar(.hidden)
-        //добавить sheet
         
+        .toolbar(.hidden)
+        .sheet(isPresented: $isSheetOpen, content: {
+            RegisterView(isSheetOpen: $isSheetOpen)
+                .onDisappear(perform: {
+                    if UserDefaults.standard.bool(forKey: kIsLoggedIn) {
+                        isLoggedIn = true
+                    }
+                })
+        })
     }
 }
 

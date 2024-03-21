@@ -5,7 +5,7 @@
 //  Created by Maria Tkachenkova on 18.03.2024.
 //
 
-import SwiftUI
+import Foundation
 import Alamofire
 import CoreData
 
