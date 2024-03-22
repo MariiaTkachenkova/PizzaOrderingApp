@@ -19,6 +19,18 @@ struct ButtonStyleYellowColorWide: ButtonStyle {
     }
 }
 
+struct ButtonStyleGreenColorWide: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .frame(maxWidth: .infinity)
+            .foregroundColor(configuration.isPressed ? .black : .white)
+            .padding(10)
+            .background(configuration.isPressed ? Color.primaryColor2 : Color.primaryColor1)
+            .cornerRadius(8)
+            .padding(.horizontal)
+    }
+}
+
 struct ButtonStylePrimaryColor1: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
@@ -74,8 +86,8 @@ extension Text {
 }
 
 extension Font {
-    static func displayFont() -> Font {
-        return Font.custom("Markazi Text", size: 64).weight(.medium)
+    static func displayFont(size: CGFloat) -> Font {
+        return Font.custom("Markazi Text", size: size).weight(.medium)
     }
     
     static func subTitleFont() -> Font {
@@ -86,9 +98,14 @@ extension Font {
         return Font.custom("Markazi Text", size: 18)
     }
     
-    static func leadText() -> Font {
-        return Font.custom("Karla", size: 16).weight(.medium)
+    static func paragraphText() -> Font {
+        return Font.custom("Karla", size: 15)
     }
+    
+    static func leadText(size: CGFloat) -> Font {
+        return Font.custom("Karla", size: size).weight(.medium)
+    }
+    //16,15
     
     static func sectionTitle() -> Font {
         return Font.custom("Karla", size: 20).weight(.black)
@@ -98,13 +115,10 @@ extension Font {
         return Font.custom("Karla", size: 16).weight(.heavy)
     }
     
-    static func paragraphText() -> Font {
-        return Font.custom("Karla", size: 14)
+    static func highlightText(size: CGFloat) -> Font {
+        return Font.custom("Karla", size: size).weight(.regular)
     }
-    
-    static func highlightText() -> Font {
-        return Font.custom("Karla", size: 15).weight(.medium)
-    }
+    //12.13
 }
 
 

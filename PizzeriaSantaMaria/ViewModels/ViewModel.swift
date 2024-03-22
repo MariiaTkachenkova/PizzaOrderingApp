@@ -37,7 +37,7 @@ class ViewModel: ObservableObject {
     
     @Published var searchText = ""
     
-    func validateUserInput(firstName: String, lastName: String, email: String, phoneNumber: String, password: String) -> Bool {
+    func validateUserRegistrationInput(firstName: String, lastName: String, email: String, phoneNumber: String, password: String) -> Bool {
         guard !firstName.isEmpty && !lastName.isEmpty && !email.isEmpty && !password.isEmpty else {
             errorMessage = "All fields are required"
             errorMessageShow = true
@@ -68,6 +68,43 @@ class ViewModel: ObservableObject {
             errorMessageShow = true
             return false
         }
+        guard password.count >= 5 else {
+            errorMessage = "Invalid password"
+            errorMessageShow = true
+            return false
+        }
+        errorMessageShow = false
+        errorMessage = ""
+        return true
+    }
+    
+    func validateUserSignInInput(email: String, password: String) -> Bool {
+        guard !email.isEmpty && !password.isEmpty else {
+            errorMessage = "All fields are required"
+            errorMessageShow = true
+            return false
+        }
+        
+        guard email.contains("@") else {
+            errorMessage = "Invalid email address"
+            errorMessageShow = true
+            return false
+        }
+        
+        let email = email.split(separator: "@")
+        
+        guard email.count == 2 else {
+            errorMessage = "Invalid email address"
+            errorMessageShow = true
+            return false
+        }
+        
+        guard email[1].contains(".") else {
+            errorMessage = "Invalid email address"
+            errorMessageShow = true
+            return false
+        }
+        
         guard password.count >= 5 else {
             errorMessage = "Invalid password"
             errorMessageShow = true

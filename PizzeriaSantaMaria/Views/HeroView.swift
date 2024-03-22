@@ -14,36 +14,51 @@ struct HeroView: View {
     
     var body: some View {
         
-        ZStack {
+        ZStack(alignment: .bottom) {
             Rectangle()
                 .foregroundColor(.primaryColor1)
-                .frame(width: 428, height: 260)
-                .ignoresSafeArea(edges: .top)
-            
-            Image("pizza_cut")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 160, height: 125)
-                .cornerRadius(16)
-                .frame(width: 200, height: 100)
-                .frame(width: 1, alignment: .leading)
+                .frame(height: 320)
             
             VStack(spacing: 0) {
-                Text("Santa Maria")
-                    .font(.displayFont())
-                    .foregroundColor(.primaryColor2)
-                    .frame(width: 350, alignment: .leading)
                 
-                Text("Roma")
-                    .font(.subTitleFont())
-                    .foregroundColor(.white)
-                    .frame(width: 350, height: 30, alignment: .leading)
+                HStack {
+                    Text("Santa Maria")
+                        .font(.displayFont(size: 60))
+                        .foregroundColor(.primaryColor2)
+                    
+                    Spacer()
+                    
+                    NavigationLink {
+                        CartView()
+                    } label: {
+                            Image(systemName: "cart.fill")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .foregroundStyle(.white)
+                                .frame(width: 25, height: 25)
+                    }
+                }
+                .padding(.horizontal)
                 
-                Text(subtitleText)
-                    .font(Font.custom("Inter", size: 16))
-                    .foregroundColor(.white)
-                    .frame(width: 200, height: 100)
-                    .frame(width: 350, alignment: .leading)
+                HStack(spacing: 0) {
+                    VStack(alignment: .leading) {
+                        Text("Roma")
+                            .font(.subTitleFont())
+                            .foregroundColor(.white)
+                        
+                        Text(subtitleText)
+                            .font(Font.custom("Inter", size: 16))
+                            .foregroundColor(.white)
+                            .frame(width: 200)
+                            .multilineTextAlignment(.leading)
+                    }
+                    Image("pizza_cut")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 150, height: 130)
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
+                }
+                .padding(.bottom, 10)
                 
                 Rectangle()
                     .foregroundColor(.clear)
@@ -58,12 +73,15 @@ struct HeroView: View {
                             Spacer()
                             TextField("Search", text: $searchText)
                                 .padding(.horizontal)
-                            
                         })
             }
             .padding(.bottom, 10)
         }
     }
+}
+
+#Preview {
+    HeroView(searchText: .constant(""))
 }
 
 

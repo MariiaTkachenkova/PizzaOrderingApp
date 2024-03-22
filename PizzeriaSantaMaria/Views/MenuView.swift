@@ -45,15 +45,15 @@ struct MenuView: View {
                             }
                         }
                     }
+                    .listStyle(.plain)
                     .onAppear {
                         if pizzas.isEmpty {
                             viewModel.fetchData(viewContext: viewContext)
                         }
                     }}
             }
+            .ignoresSafeArea(edges: .top)
         }
-        
-        
     }
     
     func buildSortDescriptors() -> [NSSortDescriptor] {

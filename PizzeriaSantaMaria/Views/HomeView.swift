@@ -17,7 +17,7 @@ struct HomeView: View {
             MenuView()
                 .tabItem {
                     Text("Menu")
-                    Image(systemName: "list.bullet")
+                    Image(systemName: "fork.knife")
                 }
                 .navigationBarHidden(true)
                 .environment(\.managedObjectContext, persistence.container.viewContext)
@@ -26,7 +26,7 @@ struct HomeView: View {
                 .tabItem {
                     Text("Profile")
                     Image(systemName: "square.and.pencil")
-
+                    
                 }
         }
     }

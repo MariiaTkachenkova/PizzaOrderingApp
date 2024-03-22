@@ -31,6 +31,7 @@ struct UserProfileView: View {
         ScrollView(.vertical, showsIndicators: false) {
             
             NavigationLink(destination: OnboardingView(), isActive: $isLoggedOut) { }
+            
             VStack(spacing: 5) {
                 
                 HStack {
@@ -48,34 +49,29 @@ struct UserProfileView: View {
                         .onboardingTextStyle()
                     TextField("First Name", text: $firstName)
                 }
-                
                 VStack {
                     Text("Last name")
                         .onboardingTextStyle()
                     TextField("Last Name", text: $lastName)
                     
                 }
-                
                 VStack {
                     Text("Phone number")
                         .onboardingTextStyle()
                     TextField("Phone number", text: $phoneNumber)
                         .keyboardType(.default)
                 }
-                
                 Text("E-mail: " + email)
                     .onboardingTextStyle()
-                
             }
             .textFieldStyle(.roundedBorder)
             .disableAutocorrection(true)
             .padding()
             
-            
             VStack {
                 Divider()
                 Text("Email notifications")
-                    .font(.leadText().bold())
+                    .font(.leadText(size: 16).bold())
                     .foregroundColor(.primaryColor1)
                 Toggle("Order statuses", isOn: $orderStatuses)
                 Toggle("Password changes", isOn: $passwordChanges)
@@ -85,12 +81,12 @@ struct UserProfileView: View {
             }
             .padding(.horizontal, 20)
             .padding(.vertical, 30)
-            .font(Font.leadText())
+            .font(Font.leadText(size: 16))
             .foregroundColor(.primaryColor1)
             
             HStack {
                 Button("Save changes") {
-                    if viewModel.validateUserInput(firstName: firstName, lastName: lastName, email: email, phoneNumber: phoneNumber, password: password) {
+                    if viewModel.validateUserRegistrationInput(firstName: firstName, lastName: lastName, email: email, phoneNumber: phoneNumber, password: password) {
                         UserDefaults.standard.set(firstName, forKey: kFirstName)
                         UserDefaults.standard.set(lastName, forKey: kLastName)
                         UserDefaults.standard.set(email, forKey: kEmail)
@@ -130,7 +126,12 @@ struct UserProfileView: View {
                         .padding(.leading)
                 }
             }
-        }
+        }//
+        .toolbar(content: {
+            ToolbarItem(placement: .status) {
+                Text("My Account")
+            }
+        })
         .onAppear {
             firstName = viewModel.firstName
             lastName = viewModel.lastName

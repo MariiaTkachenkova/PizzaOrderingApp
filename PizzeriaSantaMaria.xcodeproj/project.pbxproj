@@ -13,7 +13,6 @@
 		65183FF82BA8D16000FA8B05 /* PizzaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65183FF72BA8D16000FA8B05 /* PizzaItem.swift */; };
 		65459E622BA9CDC200FEFA5A /* Karla.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65459E602BA9CDC100FEFA5A /* Karla.ttf */; };
 		65459E632BA9CDC200FEFA5A /* Markazi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65459E612BA9CDC200FEFA5A /* Markazi.ttf */; };
-		65459E662BA9DA2D00FEFA5A /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65459E652BA9DA2D00FEFA5A /* TestView.swift */; };
 		65459E682BA9E8BA00FEFA5A /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65459E672BA9E8BA00FEFA5A /* MenuItemView.swift */; };
 		65459E6A2BAA34FA00FEFA5A /* FetchedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65459E692BAA34FA00FEFA5A /* FetchedObjects.swift */; };
 		6555D4E42BAB0C0F000A1AB3 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555D4E32BAB0C0F000A1AB3 /* HeroView.swift */; };
@@ -39,7 +38,6 @@
 		65183FF72BA8D16000FA8B05 /* PizzaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaItem.swift; sourceTree = "<group>"; };
 		65459E602BA9CDC100FEFA5A /* Karla.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Karla.ttf; sourceTree = "<group>"; };
 		65459E612BA9CDC200FEFA5A /* Markazi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Markazi.ttf; sourceTree = "<group>"; };
-		65459E652BA9DA2D00FEFA5A /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		65459E672BA9E8BA00FEFA5A /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
 		65459E692BAA34FA00FEFA5A /* FetchedObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedObjects.swift; sourceTree = "<group>"; };
 		6555D4E32BAB0C0F000A1AB3 /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				6588D6FA2BA9BB7C00D7EDD3 /* ItemDetailView.swift */,
 				6588D6F82BA9BB6500D7EDD3 /* UserProfileView.swift */,
 				6588D6FC2BA9BC1900D7EDD3 /* CartView.swift */,
-				65459E652BA9DA2D00FEFA5A /* TestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -276,7 +273,6 @@
 				65183FF82BA8D16000FA8B05 /* PizzaItem.swift in Sources */,
 				6588D6F52BA9B66300D7EDD3 /* HomeView.swift in Sources */,
 				65F3E4BF2B6A874B00542448 /* Persistence.swift in Sources */,
-				65459E662BA9DA2D00FEFA5A /* TestView.swift in Sources */,
 				65183FF62BA8C54A00FA8B05 /* DataViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

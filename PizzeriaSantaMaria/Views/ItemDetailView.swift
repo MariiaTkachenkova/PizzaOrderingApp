@@ -38,9 +38,8 @@ struct ItemDetailView: View {
                 )
                 
                 Text("\(pizza.desc ?? "")")
-                    .lineLimit(2)
-                //.fontWeight(.light)
-                    .font(.leadText())
+                    .lineLimit(3)
+                    .font(.leadText(size: 16))
                     .padding(.horizontal,10)
                     .padding(.vertical,5)
                 HStack {
@@ -52,34 +51,33 @@ struct ItemDetailView: View {
                         .padding(.vertical,5)
                     Text("$ \(pizza.price ?? "")")
                         .fontWeight(.heavy)
-                        .font(.leadText())
+                        .font(.leadText(size: 15))
                         .frame(maxWidth: .infinity,alignment: .trailing)
                         .padding(.horizontal,10)
                         .padding(.vertical,5)
                 }
-                
-
                 Button("Add to Cart") {
                 }
                 .buttonStyle(ButtonStyleYellowColorWide())
             }
             .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItemGroup() {
-                        Text("\(pizza.title ?? "")")
-                            .font(Font.custom("Karla", size: 15).weight(.medium))
-                            .padding(EdgeInsets(top: 2, leading: 0, bottom: 2, trailing: 0))
-                        Button {
-                        } label: {
-                            Image(systemName: "cart.fill")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .foregroundStyle(.gray)
-                                .frame(width: 30, height: 30)
-                                .offset(x: -20)
-                        }
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("\(pizza.title ?? "")")
+                        .font(.sectionTitle())
+                        .padding(EdgeInsets(top: 2, leading: 0, bottom: 2, trailing: 0))
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                    } label: {
+                        Image(systemName: "cart.fill")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .foregroundStyle(.gray)
+                            .frame(width: 25, height: 25)
                     }
                 }
+            }
         }
     }
 }
