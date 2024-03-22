@@ -18,6 +18,7 @@ struct ItemDetailView: View {
     var body: some View {
         
         ScrollView {
+            
             VStack {
                 AsyncImage(
                     url:URL(string: "\(pizza.imageHQ ?? "")"),
@@ -25,8 +26,7 @@ struct ItemDetailView: View {
                         image.resizable()
                             .frame(maxWidth: .infinity)
                             .aspectRatio(contentMode: .fit)
-                    },
-                    placeholder: {
+                    }, placeholder: {
                         ZStack {
                             Image("pizza_desk2")
                                 .resizable()
@@ -65,7 +65,7 @@ struct ItemDetailView: View {
                 ToolbarItem(placement: .principal) {
                     Text("\(pizza.title ?? "")")
                         .font(.sectionTitle())
-                        .padding(EdgeInsets(top: 2, leading: 0, bottom: 2, trailing: 0))
+                        .padding(.horizontal, 2)
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {

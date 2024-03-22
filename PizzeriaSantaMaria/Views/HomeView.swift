@@ -26,7 +26,6 @@ struct HomeView: View {
                 .tabItem {
                     Text("Profile")
                     Image(systemName: "square.and.pencil")
-                    
                 }
         }
     }

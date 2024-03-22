@@ -34,6 +34,10 @@ struct UserProfileView: View {
             
             VStack(spacing: 5) {
                 
+                Text("My Account")
+                    .font(.sectionTitle())
+                    .padding(.horizontal, 2)
+                
                 HStack {
                     Image(systemName: "person.crop.circle")
                         .resizable()
@@ -42,7 +46,7 @@ struct UserProfileView: View {
                         .frame(maxHeight: 50)
                     Spacer()
                 }
-                .padding(.vertical)
+                .padding(.bottom)
                 
                 VStack {
                     Text("First name")
@@ -126,12 +130,7 @@ struct UserProfileView: View {
                         .padding(.leading)
                 }
             }
-        }//
-        .toolbar(content: {
-            ToolbarItem(placement: .status) {
-                Text("My Account")
-            }
-        })
+        }
         .onAppear {
             firstName = viewModel.firstName
             lastName = viewModel.lastName

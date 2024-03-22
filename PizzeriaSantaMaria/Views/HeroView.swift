@@ -17,7 +17,7 @@ struct HeroView: View {
         ZStack(alignment: .bottom) {
             Rectangle()
                 .foregroundColor(.primaryColor1)
-                .frame(height: 320)
+                .frame(height: 300)
             
             VStack(spacing: 0) {
                 
@@ -31,13 +31,14 @@ struct HeroView: View {
                     NavigationLink {
                         CartView()
                     } label: {
-                            Image(systemName: "cart.fill")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .foregroundStyle(.white)
-                                .frame(width: 25, height: 25)
+                        Image(systemName: "cart.fill")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .foregroundStyle(.white)
+                            .frame(width: 25, height: 25)
                     }
                 }
+                .offset(y: 10)
                 .padding(.horizontal)
                 
                 HStack(spacing: 0) {

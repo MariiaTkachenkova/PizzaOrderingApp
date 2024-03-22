@@ -28,7 +28,6 @@
 		65F3E4BD2B6A874B00542448 /* PizzeriaSantaMariaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F3E4BC2B6A874B00542448 /* PizzeriaSantaMariaApp.swift */; };
 		65F3E4BF2B6A874B00542448 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F3E4BE2B6A874B00542448 /* Persistence.swift */; };
 		65F3E4C22B6A874B00542448 /* PizzeriaSantaMaria.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65F3E4C02B6A874B00542448 /* PizzeriaSantaMaria.xcdatamodeld */; };
-		65F3E4C42B6A874B00542448 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F3E4C32B6A874B00542448 /* ContentView.swift */; };
 		65F3E4C62B6A874D00542448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F3E4C52B6A874D00542448 /* Assets.xcassets */; };
 		65F3E4CA2B6A874D00542448 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F3E4C92B6A874D00542448 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -55,7 +54,6 @@
 		65F3E4BC2B6A874B00542448 /* PizzeriaSantaMariaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzeriaSantaMariaApp.swift; sourceTree = "<group>"; };
 		65F3E4BE2B6A874B00542448 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		65F3E4C12B6A874B00542448 /* PizzeriaSantaMaria.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PizzeriaSantaMaria.xcdatamodel; sourceTree = "<group>"; };
-		65F3E4C32B6A874B00542448 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65F3E4C52B6A874D00542448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65F3E4C72B6A874D00542448 /* PizzeriaSantaMaria.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PizzeriaSantaMaria.entitlements; sourceTree = "<group>"; };
 		65F3E4C92B6A874D00542448 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -94,7 +92,6 @@
 		65183FEF2BA8C10D00FA8B05 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				65F3E4C32B6A874B00542448 /* ContentView.swift */,
 				6588D6F22BA9B62F00D7EDD3 /* OnboardingView.swift */,
 				6555D4E92BAB2B9B000A1AB3 /* RegisterView.swift */,
 				6588D6F42BA9B66300D7EDD3 /* HomeView.swift */,
@@ -259,7 +256,6 @@
 				65F3E4C22B6A874B00542448 /* PizzeriaSantaMaria.xcdatamodeld in Sources */,
 				65F3E4BD2B6A874B00542448 /* PizzeriaSantaMariaApp.swift in Sources */,
 				6555D4E42BAB0C0F000A1AB3 /* HeroView.swift in Sources */,
-				65F3E4C42B6A874B00542448 /* ContentView.swift in Sources */,
 				6588D6F32BA9B62F00D7EDD3 /* OnboardingView.swift in Sources */,
 				65459E682BA9E8BA00FEFA5A /* MenuItemView.swift in Sources */,
 				6555D4E62BAB0FED000A1AB3 /* ViewModel.swift in Sources */,
@@ -333,6 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -389,6 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
