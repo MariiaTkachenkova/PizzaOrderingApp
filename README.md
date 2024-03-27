@@ -25,14 +25,15 @@ I also worked on sorting and filtering the food items here.
 I used iPhone 14 Simulator for preview.
 
 Onboarding Screens
-![Simulator Screenshot - iPhone 14 - 2024-03-22 at 15 08 22](https://github.com/MariiaTkachenkova/PizzaOrderingApp/assets/122028303/e888ccb8-2afd-492a-ac63-bafef8fdcd1f)
-![Simulator Screenshot - iPhone 14 - 2024-03-22 at 15 09 55](https://github.com/MariiaTkachenkova/PizzaOrderingApp/assets/122028303/f4992709-deea-4f0f-aac7-91a0f75332b6)
+![Onboarding Screen - iPhone 14 Small](https://github.com/MariiaTkachenkova/PizzaOrderingApp/assets/122028303/85807557-fd83-41fe-9212-6c2c4cf50159)
+![Registration Form Screen - iPhone 14 Small](https://github.com/MariiaTkachenkova/PizzaOrderingApp/assets/122028303/f6758784-fca5-4fad-8e6b-dd4ead3837a8)
+
 
 Menu Screen
-![Simulator Screenshot - iPhone 14 - 2024-03-22 at 15 11 13](https://github.com/MariiaTkachenkova/PizzaOrderingApp/assets/122028303/4e455f61-91c4-43c9-b3bf-f44bd88ef573)
+![Menu Screen - iPhone 14 Small](https://github.com/MariiaTkachenkova/PizzaOrderingApp/assets/122028303/04b98f2e-0cc4-4a76-b995-89afe21275e0)
 
 Pizza Details Screen
-![Simulator Screenshot - iPhone 14 - 2024-03-22 at 15 14 02](https://github.com/MariiaTkachenkova/PizzaOrderingApp/assets/122028303/150408f4-7ce2-4ed4-b3e3-8c44ac3920a4)
+![Pizza Detail Screen - iPhone 14 Small](https://github.com/MariiaTkachenkova/PizzaOrderingApp/assets/122028303/5c89fb17-d404-4d00-a6ad-d8a364cc866b)
 
 User Profile Screen
-![Simulator Screenshot - iPhone 14 - 2024-03-22 at 15 11 44](https://github.com/MariiaTkachenkova/PizzaOrderingApp/assets/122028303/916f9a0e-9244-4a6f-941a-a38da95b1eb1)
+![Profile Screen - iPhone 14 Small](https://github.com/MariiaTkachenkova/PizzaOrderingApp/assets/122028303/bf82045f-5f46-42a7-a637-404054841f69)
